@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  PDSelectorView.h
 //  PipeDreamLevelCreator
 //
 //  Created by Vincent Fiorentini on 10/17/14.
@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface PDSelectorView : UIView
 
+- (void)resetCurrentValue;
+- (int)getCurrentValue;
+- (void)setTarget:(id)target action:(SEL)action;
 
 @end
-
